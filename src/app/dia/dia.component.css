@@ -1,0 +1,9 @@
+div {
+  display: inline-block;
+}
+
+
+.center {
+  text-align: center;
+  border: 3px solid green;
+}

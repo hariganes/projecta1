@@ -1,0 +1,44 @@
+{
+  "Costumerlist": [
+    {
+      "DomainName": "hari",
+      "email": "",
+      "Mobile": "9539364311",
+      "CompanyName": "har",
+      "CostumerName": "dhd",
+      "Registrar": "AEServer",
+      "date1": "2001-11-30T18:30:00.000Z",
+      "date2": "2001-11-30T18:30:00.000Z",
+      "Provider": "CloudFlare",
+      "ACTIVATION": "2001-11-30T18:30:00.000Z",
+      "EXPIRY": "2001-11-30T18:30:00.000Z",
+      "Plan": "PLAN 2",
+      "id": 1
+    },
+    {
+      "DomainName": "Hari",
+      "email": "",
+      "Mobile": "9539364311",
+      "CompanyName": "VIT chennai",
+      "CostumerName": "jarf",
+      "Registrar": "Google",
+      "date1": "2022-06-02T18:30:00.000Z",
+      "date2": "2022-06-10T18:30:00.000Z",
+      "Provider": "AEServer",
+      "ACTIVATION": "2001-11-30T18:30:00.000Z",
+      "EXPIRY": "2001-11-30T18:30:00.000Z",
+      "Plan": "PLAN 2",
+      "id": 2
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,12 @@
+*{
+
+  flex-direction: column;
+  display: flex;
+}
+.mat-drawer{
+  width:300px;
+  background-color: white;
+}
+.mat-drawer-container{
+  height: 100%;
+}

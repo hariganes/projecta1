@@ -1,0 +1,21 @@
+.mat-divider{
+  border-color: rgb(0, 0, 0);
+}
+.find{
+  border-color: white;
+  color: black;
+  align-self: center;
+}
+.find:hover{
+  opacity: 0.4%;;
+}
+.find:active{
+  background-color: black;
+
+ }
+
+.find:focus{
+  color: black;
+  border: 2px solid black;
+  box-shadow: 0px 0px 0px 1px red;
+}

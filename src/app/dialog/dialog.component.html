@@ -1,0 +1,104 @@
+<p>Addition form</p>
+<div mat-dialog-content>
+  <form [formGroup]="productForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Domain Name</mat-label>
+      <input formControlName="DomainName" matInput placeholder="Domain Name">
+    </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your email</mat-label>
+        <input matInput placeholder="pat@example.com" [formControl]="email" required>
+        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+    
+
+    <mat-form-field appearance="fill">
+      <mat-label>Mobile</mat-label>
+      <input formControlName="Mobile" matInput placeholder="Mobile" type="tel">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Company Name</mat-label>
+      <input formControlName="CompanyName" matInput placeholder="Company Name">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Costumer Name</mat-label>
+      <input formControlName="CostumerName" matInput placeholder="Costumer Name">
+    </mat-form-field>
+
+
+    <mat-form-field appearance="fill">
+      <mat-label>Product Cat</mat-label>
+        <mat-select formControlName="Registrar" placeholder="Domain Type">
+          <mat-option value="Endurance">Endurance</mat-option>
+          <mat-option value="Google">Google</mat-option>
+          <mat-option value="AEServer">AEServer</mat-option>
+          <mat-option value="Crazy Domains">Crazy Domains</mat-option>
+          <mat-option value="GoDaddy">GoDaddy</mat-option>
+          <mat-option value="Costumer Domain">Costumer Domain</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="fill">
+      <mat-label>Registration-Renewal Date</mat-label>
+      <mat-date-range-input [rangePicker]="picker">
+        <input formControlName="date1" matStartDate placeholder="Date1">
+        <input formControlName="date2" matEndDate placeholder="Date2">
+      </mat-date-range-input>
+      <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-date-range-picker #picker></mat-date-range-picker>
+    </mat-form-field>
+    <br>
+    <label for=""><h2>select</h2></label>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Provider</mat-label>
+        <mat-select formControlName="Provider" placeholder="Domain Type">
+          <mat-option value="Endurance">Endurance</mat-option>
+          <mat-option value="LINODE">LINODE</mat-option>
+          <mat-option value="AEServer">AEServer</mat-option>
+          <mat-option value="BharathNet">BharathNet</mat-option>
+          <mat-option value="Firebase">Firebase</mat-option>
+          <mat-option value="CloudFlare">CloudFlare</mat-option>
+          <mat-option value="GIT pages">GIT pages</mat-option>
+          <mat-option value="No Hosting">No Hosting</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>ACTIVATION/EXPIRY</mat-label>
+        <mat-date-range-input [rangePicker]="picker">
+          <input formControlName="ACTIVATION" matStartDate placeholder="Start date">
+          <input formControlName="EXPIRY" matEndDate placeholder="End date">
+        </mat-date-range-input>
+        <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-date-range-picker #picker></mat-date-range-picker>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Plan</mat-label>
+          <mat-select formControlName="Plan" placeholder="Domain Type">
+            <mat-option value="PLAN 1">PLAN 1</mat-option>
+            <mat-option value="PLAN 2">PLAN 2</mat-option>
+            <mat-option value="PLAN 3">PLAN 3</mat-option>
+            <mat-option value="PLAN 4">PLAN 4</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+  </form>
+</div>
+<div class="btt" mat-dialog-action [align]="'end'">
+  <div class="bt1">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  </div>
+  <div class="bt2">
+    &nbsp;&nbsp;&nbsp;
+  <button mat-raised-button colo r="primary" (click)="add()">&nbsp;&nbsp;{{actionbtn}}&nbsp;&nbsp;</button>
+  </div>
+</div>
+
+
+

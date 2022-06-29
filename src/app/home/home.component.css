@@ -1,0 +1,28 @@
+
+  table {
+    width: 120%;
+    border-radius: 20px;
+    background-color: rgb(216, 195, 155);
+
+  }
+
+  .mat-form-field {
+    font-size: 14px;
+    width: 120%;
+
+  }
+
+  td, th {
+    width: 12.5%;
+  }
+  .mat-paginator{
+    width: 120%;
+
+  }
+  .container{
+margin-left: 0%;
+    width: 140%;
+
+
+
+  }
